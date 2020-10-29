@@ -1,0 +1,205 @@
+/* TYPOGRAPHY LIBRARY OF RADEK NOVÝ */
+
+/* Fonts */
+
+@font-face {
+    font-family: "roboto-bold";
+    font-weight: 900;
+    src: url(./docs/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "roboto-bold-italic";
+    font-weight: 900;
+    src: url(./docs/fonts/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: "roboto-medium";
+    font-weight: 400;
+    src: url(./docs/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: "roboto-medium-italic";
+    font-weight: 400;
+    src: url(./docs/fonts/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: "roboto-thin";
+    font-weight: 100;
+    src: url(./docs/fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: "roboto-thin-italic";
+    font-weight: 100;
+    src: url(./docs/fonts/Roboto-ThinItalic.ttf);
+}
+
+/* Layout */
+
+main {
+    margin: auto;
+    max-width: 60vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+
+html {
+    font-family: "roboto-medium";
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "roboto-medium";
+}
+
+h1::first-letter,
+h2::first-letter,
+h3::first-letter,
+h4::first-letter,
+h5::first-letter {
+    border-bottom: red 3px solid;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+/* Paragraphs */
+
+p {
+    font-family: "roboto-medium";
+    text-align: justify;
+}
+
+/* Lists */
+
+ul {
+    list-style-type: disc;
+}
+
+ol ol li {
+    font-size: 0.8em;
+}
+
+ul ul li {
+    font-size: 0.8em;
+}
+
+/* Links */
+
+a {
+    font-family: "roboto-bold";
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Quotes */
+
+q {
+    font-family: "roboto-thin-italic";
+}
+
+q::before {
+    content: '"';
+}
+
+q::after {
+    content: '"';
+}
+
+/* Special tags */
+
+em {
+    font-family: "roboto-medium-italic";
+    font-style: normal;
+}
+
+b {
+    font-family: "roboto-bold";
+}
+
+small {
+    font-family: "roboto-thin";
+    font-size: 1em;
+}
+
+s {
+    text-decoration: line-through;
+}
+
+/* Images */
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    max-width: 100%;
+    max-height: 40vh;
+}
+
+figcaption {
+    max-width: 100%;
+    font-family: "roboto-thin";
+    font-size: 0.8em;
+}
+
+/* Media query */
+
+@media only screen and (max-width: 1280px) {
+
+    main {
+        max-width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        max-width: 90vw;
+    }
+}
+
+@media print {
+
+    ul,
+    ol {
+        break-inside: avoid-page;
+    }
+    main {
+        max-width: 80vW;
+    }
+}
