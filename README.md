@@ -1,7 +1,7 @@
 # Typography library of Radek Nový
 **Author:** Radek Nový
 ## Demo site
-Link to demo site for preview.
+Link to [demo](https://www.example.com) site for preview.
 ## Dependecies
 The usage of this library is up to you.
 ## Implementation
